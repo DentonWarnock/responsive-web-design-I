@@ -226,12 +226,12 @@ footer #copyright {
 
 /* start services page */
 .services {
-	width: 975px;
+	max-width: 975px;
 	border-bottom: 1.2px solid black;
 }
 
 .services-header-img {
-	margin-top: 48px;
+	margin-top: 10px;
 	width: 977px;
 }
 
@@ -355,6 +355,45 @@ p {
   .contact h2 {
     margin-top: 0px;
   }
+  /* Services Page CSS for tablet */
+  .container .services {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-left: 7%;
+    flex-direction: column;
+  }
+  .container .services .services-header-img {
+    display: none;
+  }
+  .main-content {
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin-left: 2.5%;
+  }
+  .main-content article {
+    max-width: 45%;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: 2.5% 0;
+  }
+  .bottom-content {
+    max-width: 100%;
+    margin-left: 5%;
+    flex-direction: column-reverse;
+    margin: 3% auto;
+  }
+  .bottom-content .bottom-right {
+    display: flex;
+    justify-content: center;
+    margin: 7% auto; 
+  }
+  .container .bottom-content .bottom-left {
+    display: flex;
+    justify-content: center;
+    margin: 0% auto;
+    
+    
+  }
 }
 
 
@@ -430,6 +469,27 @@ p {
     flex-direction: column;
     align-content: column;
 }
-p {
+  p {
   font-weight: 500 ;
+  }
+
+/* Services Page CSS for tablet */
+.main-content article {
+  max-width: 90%;
+  justify-content: space-evenly;
+  height: 100%;
+  margin: 2.5% auto;
+  }
+.bottom-content .bottom-right {
+  display: none;
+}
+.main-content {
+  max-width: 95%;
+}
+.bottom-content .bottom-left {
+  max-width: 95%;
+  margin: 5% 0 0 5%;
+  display: flex;
+  justify-content: center;
+}
 }
